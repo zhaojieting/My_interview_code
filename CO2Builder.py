@@ -22,7 +22,6 @@ class Barrier:
             elif atom == 'O':
                 self.o_store.append('O')
             atom = q.get()
-
             if self.checker() == True:
                 print(''.join(self.c_store.pop(0) + self.o_store.pop(0) + self.o_store.pop(0)),end='')
 
